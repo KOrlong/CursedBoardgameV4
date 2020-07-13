@@ -152,7 +152,7 @@ var configChangeImgs = [ //used to show icons for attribute at this level
 {attribname: "exhibitionist", imgs:["exhibitionist.jpg"]},
 {attribname: "lewd dreams", imgs:["lewddreams.jpg"]},
 {attribname: "heat", imgs:["heat.jpg"]},
-{attribname: "polycule", imgsM:["Polycule1.jpg"], imgsF:["Polycule4.jpg"]},
+{attribname: "polycule", imgs:["Polycule1.jpg"]},
 {attribname: "fluid addiction", imgs:["fluidaddiction.jpg"]},
 {attribname: "lactation", imgs:["lactation.jpg"]},
 {attribname: "headpats", imgsM:["HeadpatsM.jpg"], imgsF:["HeadpatsF.jpg"]},
@@ -331,7 +331,7 @@ var playerTemplates = [
 var items = [
 //valuable consumables
 {name:"Silver Coin",desc:"A valuable old coin.", effect:"May be used to purchase glyphs.", img:"silvercoin.png", usable:false, stacks:true, randwt:3, gameitm:1},
-{name:"Cash",desc:"Money in the form of various dollar bills.", effect:"Genuine currency. You win it, you keep it.", img:"cash.jpg", usable:false, stacks:true, randwt:7},
+{name:"Cash",desc:"Cash money, the greatest superpower.", effect:"Money you'll mysteriously receive at the beginning of each month in the local currency. Nobody will wonder where it comes from.", img:"cash.jpg", usable:false, stacks:true, randwt:7},
 
 //glyphs sold by shop
 {name:"Glyph of Jaunting", desc:"A pebble etched with a faded glyph", effect:"Teleports you exactly 6 steps forward when activated.",  img:"glyph2.jpg", usable:true, stacks:true, gameitm:1},
