@@ -706,7 +706,7 @@ function ApplyEffect(seldat)
 						money += giveqty;
 					}		
 					giveitem(randitem.name,giveqty);						
-					showpopup("<u>Treasure Looted</u><br/><br/><span style='color:yellow'><em>\"Congratulations, you've cause for celebrations. May this loot live up to your crate expectations.\"</em></span><br/><br/><span style='float:right'>You open the trasure chest and obtained a reward! (automatically added into inventory)<br/><br/><span style='color:cyan'>Got Item: "+randitem.name+" x "+giveqty+"</span></span>","goodchest.jpg");
+					showpopup("<u>Treasure Looted</u><br/><br/><span style='color:yellow'><em>\"Congratulations, you've cause for celebrations. May this loot live up to your crate expectations.\"</em></span><br/><br/><span style='float:right'>You open the treasure chest and obtained a reward! (automatically added into inventory)<br/><br/><span style='color:cyan'>Got Item: "+randitem.name+" x "+giveqty+"</span></span>","goodchest.jpg");
 				
 				}
 			}
