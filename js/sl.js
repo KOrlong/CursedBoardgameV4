@@ -6,7 +6,6 @@ This version of the CYOA was edited by KOrlong in July 2020, based on the fantas
   You agree not to hold me responsible for any damages that may result from your use of these files, use at your own risk.
   You may create derivative works, using all or parts of the files provided here, as long as the abovementioned acknowledgement is retained.
   
-  Basically, if you share or modify this, be nice and credit me.
 */
 
 var playertoken = new Object();	
@@ -825,7 +824,7 @@ function ApplyEffect(seldat)
 			case "Exhibitionist": PrepareTF();attribute="exhibitionist"; adjust_attrib(attribute,1); break;
 			case "Lewd Dreams": PrepareTF();attribute="lewd dreams"; adjust_attrib(attribute,1); break;
 			case "Age Regression": PrepareTF();attribute="age"; 
-			playertoken.stats["age"] -= 3;
+			playertoken.stats["age"] -= 2;
 			playertoken.stats["age"] = playertoken.stats["age"]<minage?minage:playertoken.stats["age"];
 			if(playertoken.stats["age"]<20)
 			{
