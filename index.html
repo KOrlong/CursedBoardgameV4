@@ -1,0 +1,311 @@
+<!doctype html>
+
+<!-- 
+  Cursed Boardgame Interactive NSFWCYOA
+  Created by /u/chinesesilklanterns
+  May 2020
+    
+  I hope you enjoyed playing this as much as I did making it. 
+  If you want to contact me, find me on Reddit (https://reddit.com/u/chinesesilklanterns)
+  If you've found content that you think I might enjoy, do share it with me!
+  
+  License: You are free to use and redistribute this game, associated code and files entirely free of charge in a non-commercial setting, so long as proper attribution is given to me. 
+  I do not own the copyright to the illustrated images in the 'icons' folder used in this game, they belong to various artists found online.
+  You agree not to hold me responsible for any damages that may result from your use of these files, use at your own risk.
+  You may create derivative works, using all or parts of the files provided here, as long as the abovementioned acknowledgement is retained.
+  
+  Basically, if you share or modify this, be nice and credit me.
+-->
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cursed Boardgame - Interactive CYOA</title>
+<meta name="viewport" content="width=800, user-scalable=yes, initial-scale=0.66, maximum-scale=1" />
+<link rel="stylesheet" type="text/css" href="css/sl.css" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-167999607-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-167999607-1');
+</script>
+</head>
+
+<body class="spinnerprogress">
+
+<div id="wrapper">
+	<div id="container">
+    	<div id="screen1">        	
+            <div class="clear"></div>
+            <footer>
+                <div class="screen1_footer">
+                        <div id="start" onclick="nextscreen('screen1', 'screen2');" class="startBtn"><span>START</span></div>
+                      
+                </div>
+            </footer>
+    	</div><!-- \screen1 -->
+    	
+		 <div id="screen2" style="display:none">
+        	<div class="Level-Theme">
+                <h3>Character Select</h3>
+            	<ul id="selectLevel">
+                	<li value=0 onclick="selectchar(this);">James</li>
+                	<li value=1 onclick="selectchar(this);">Colin</li>
+                	<li value=2 onclick="selectchar(this);">Jeremy</li>
+                	<li value=3 onclick="selectchar(this);">Trevon</li>
+                	<li value=4 onclick="selectchar(this);">Justin</li>
+					<li value=5 onclick="selectsandbox(this)">[Sandbox Mode]</li>
+                </ul>				
+            </div>
+			<div id="bios" class="bios">
+			<div id="bio" class="bio"></div>
+			<div id="bio2" class="bio2"></div>
+			<div class="bio3"><button class="submitAns" style="margin-right: 2px;" onclick="selectedchar()">NEXT</button></div>
+        	</div>
+        </div><!-- \screen3 -->
+		
+      <div id="screen3" style="display:none">
+      	
+    		<div id="instructions">
+                <h2><u>Prologue</u></h2>
+                <div class="inst_text">
+				<img src='img/sucked.jpg' width=200 height=100 style="border:2px solid #000000; float:left; margin:6px;" /><br/>
+                <span style="color:lime"><em>Opening that creepy boardgame you found in the antique store probably wasn't the brightest idea.</em></span><br/><br/>
+				You remember a flash of green light, your world blurring and melting around you. <br/><br/>
+				The next thing you know, you're standing alone in a void of nothingness, except for a table in front of you. On the table is a board, dice, and a paper note.<br/><br/>				
+				You look around, but only inky blackness stretches in all directions.<br/><br/>
+				<span style="color:yellow">You cautiously examine the paper note...</span>
+                </div>
+            </div>
+            
+            <div class="clear"></div>
+                
+            <footer>
+                <div class="screen2_footer">
+                        <div id="play" class="startBtn" onclick="nextscreen('screen3', 'screen4');	playertoken.setpos('Start');"><span>NEXT</span></div>
+                        
+                </div>
+            </footer>
+    	
+        </div><!-- \screen2 -->
+        
+       
+        
+        
+        <div id="screen4" style="display:none">
+        	<div id="dice">
+			<div id="hideside">
+            	<div class="surface" id="rolldicebtn"></div>
+                <div class="dice" id="reddice"></div>
+				<div class="items" id="invicon" onclick=""></div>
+				<div class="human" id="charicon" onclick="">
+				<img id="innerself" src='img/innerself.png' width=70 height=100 style="opacity:0;" />
+				</div>
+				<div class="shop" id="shopicon" onclick=""></div>
+			</div>
+            </div>
+        	<div id="table_grid">						
+				<div id="ludo">
+            	<div id="snakesDiv">
+                	       					
+                </div>   	
+				</div>
+			
+            	<table class="table" >
+                  <tbody>
+                    <tr class="">
+                      <td>End</td>
+                      <td>99</td>
+                      <td>98</td>
+                      <td>97</td>
+                      <td>96</td>
+                      <td>95</td>
+                      <td>94</td>
+                      <td>93</td>
+                      <td>92</td>
+                      <td>91</td>
+                    </tr>
+                    <tr class="">
+                      <td>81</td>
+                      <td>82</td>
+                      <td>83</td>
+                      <td>84</td>
+                      <td>85</td>
+                      <td>86</td>
+                      <td>87</td>
+                      <td>88</td>
+                      <td>89</td>
+                      <td>90</td>
+                    </tr>
+                    <tr class="">
+                     <td>80</td>
+                      <td>79</td>
+                      <td>78</td>
+                      <td>77</td>
+                      <td>76</td>
+                      <td>75</td>
+                      <td>74</td>
+                      <td>73</td>
+                      <td>72</td>
+                      <td>71</td>
+                    </tr>
+                    <tr class="">
+                      <td>61</td>
+                      <td>62</td>
+                      <td>63</td>
+                      <td>64</td>
+                      <td>65</td>
+                      <td>66</td>
+                      <td>67</td>
+                      <td>68</td>
+                      <td>69</td>
+                      <td>70</td>
+                    </tr>
+                    <tr class="">
+                      <td>60</td>
+                      <td>59</td>
+                      <td>58</td>
+                      <td>57</td>
+                      <td>56</td>
+                      <td>55</td>
+                      <td>54</td>
+                      <td>53</td>
+                      <td>52</td>
+                      <td>51</td>
+                    </tr>
+                    <tr class="">
+                     <td>41</td>
+                      <td>42</td>
+                      <td>43</td>
+                      <td>44</td>
+                      <td>45</td>
+                      <td>46</td>
+                      <td>47</td>
+                      <td>48</td>
+                      <td>49</td>
+                      <td>50</td>
+                    </tr>
+                    <tr class="">
+                     <td>40</td>
+                      <td>39</td>
+                      <td>38</td>
+                      <td>37</td>
+                      <td>36</td>
+                      <td>35</td>
+                      <td>34</td>
+                      <td>33</td>
+                      <td>32</td>
+                      <td>31</td>
+                    </tr>
+                    <tr class="">
+                      <td>21</td>
+                      <td>22</td>
+                      <td>23</td>
+                      <td>24</td>
+                      <td>25</td>
+                      <td>26</td>
+                      <td>27</td>
+                      <td>28</td>
+                      <td>29</td>
+                      <td>30</td>
+                    </tr>
+                    <tr class="">
+                      <td>20</td>
+                      <td>19</td>
+                      <td>18</td>
+                      <td>17</td>
+                      <td>16</td>
+                      <td>15</td>
+                      <td>14</td>
+                      <td>13</td>
+                      <td>12</td>
+                      <td>11</td>
+                    </tr>
+                    <tr class="">
+                     <td>Start</td>
+                      <td>2</td>
+                      <td>3</td>
+                      <td>4</td>
+                      <td>5</td>
+                      <td>6</td>
+                      <td>7</td>
+                      <td>8</td>
+                      <td>9</td>
+                      <td>10</td>
+                    </tr>
+                  </tbody>
+    			</table>
+				
+					<div id="ludo">
+            
+				</div>
+            <div id="player"></div>  
+				
+            </div><!-- \grid -->
+                                   
+            <div id="questionViewer">
+				<div id="toggleminimize" onclick="toggleminimize()"></div>
+                <div id="questionTitle" class=""> 
+                    <p id="questionTitleTxt"></p> 
+                </div>
+                <div id="userAnswer">
+                    <ul>
+                        <li value=0 onclick="setactiveans(this)"></li>
+                        <li value=1 onclick="setactiveans(this)"></li>
+                        <li value=2 onclick="setactiveans(this)"></li>
+                        <li value=3 onclick="setactiveans(this)"></li>
+                    </ul>
+                </div>
+                <div><button class="submitAns" onclick="submitAnswer()">Submit</button></div>
+			</div>		 
+			<div id="playerstatus">             
+			<div class="box"><p id="playerstatustext" ></p></div>			
+			<div><button class="submitAns" onclick="document.getElementById('playerstatus').style.bottom = '';">Back</button></div>
+			</div>
+			<div id="inventory">     
+			<p style="text-align: center;font-family: 'the_kings_of_the_houseregular'; color:white; font-size: 30px;">Inventory</p>
+			<div id="inventoryicons" class="box2" style="">
+			
+			</div>			  
+			<div id="inventorytext" class="box2" style="left: 400px;">			
+			</div>			
+			<div><button class="submitAns" style="position: absolute; bottom: 26px; right: 30px;" onclick="setactiveans();document.getElementById('inventory').style.bottom = '';">Back</button></div>
+			</div>
+		 
+			<div id="msgComplete">
+			<p><u>THE END</u></p>
+			<p>As your game token moves onto the final tile, you hear the loud beating of drums.<br/>The world around you begins to blur...<br/><br/>You wake up in a familiar place. It's your room. Your bed.<br/>You get up. You feel odd. <span style="color:pink"><b>Different.</b></span><br/><br/><span style="color:yellow">You turn to face the mirror...</span></p>
+			 
+			 <div id="finalinspect" style="display:none;" onclick="showplayerstatus();$('#aftfinalinspect').delay(1000).fadeIn();$('#replay').delay(1000).fadeIn();">Examine Self</div>
+			 <p id="aftfinalinspect" style="display:none;"><em><b id="prognosis"></b></em><br/><br/><span id="tfcount" style="color:lime;"></span><br/><br/>Thanks for playing!</p>
+			 <div id="replay" onclick="playagain()" style="display:none;">Replay?</div>
+			</div>
+			<div class="overlay">
+			<div class="alertMsg sixDigitMsg"><p id="popmsg"></p> <div><button id="dismisspop" class="submitAns" onclick="">NEXT</button></div> </div>
+			</div>
+        </div><!-- \screen5 -->
+        
+      
+    
+  
+    
+    </div><!-- \container -->
+</div><!-- \wrapper -->
+
+<div class="progress">
+	<div id="progress-wrapper">		
+		<h2>Loading, Please Wait...</h2><br/>
+		<br/>If this message persists, your browser might not support this content. Sorry.
+		<br/><br/>Please direct all technical issues to <a href="https://reddit.com/u/chinesesilklanterns">/u/chinesesilklanterns on Reddit</a>
+	</div>
+</div>
+
+
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/taffy-min.js"></script>
+<script type="text/javascript" src="js/sl.config.js"></script>
+<script type="text/javascript" src="js/sl.js"></script>
+
+</body>
+</html>
