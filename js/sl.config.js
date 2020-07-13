@@ -62,7 +62,7 @@ var configAttribDescs = [
 {attribname: "always ready", descsM: ["","Your body is always ready for sex. Your cock is perpetually rock hard and erect."], descsF: ["","Your body is always ready for sex. Your nipples are perpetually stiff, and your pussy dripping wet and gooey."]},
 {attribname: "enhanced orgasms", descs: ["","Your orgasms last longer and more powerful and pleasurable than normal. It'll be hard to stay quiet or maintain your composure whenever they happen.","Your orgasms are mind-blowingly intense and incredibly drawn out. When they hit, you'll be incapacitated as your mind goes blank, unable to stop yourself from writhing and moaning in bliss."]},
 {attribname: "submissiveness", descs: ["","You are naturally submissive, often seeking to obey and please, especially in sexual situations.","You're very submissive, always seeking to obey and please. You get turned on and find it really hard to resist being ordered around.","You are very submissive. Following orders and doing what is expected of you are mild turn-ons, and being made visibly aware of your submissiveness (such as by being restrained) is extremely arousing to you. However, you can no longer orgasm unless you are entirely unable to avoid it."]},
-{attribname: "optimized body", descs: ["","Minor inconveniences like sweat, periods or rashes are all things of the past.","Your metabolism is idealized, and your nutrition will always effectively be perfect no matter what (or how much) you eat."]},
+{attribname: "optimized body", descs: ["","Minor inconveniences like sweat, periods or rashes are all things of the past.","Your metabolism is idealized, and will function as if you'd had optimal nutrition and exercice no matter what. In normal circumstances, your body no longer produces waste."]},
 {attribname: "multiple orgasms", descs: ["","Your refractory period is basically non-existent, you're ready to go again right after you come. Get too excited and you might experience a wave of multiple orgasms cascading over you, one after the other, with no respite."]},
 {attribname: "random orgasms", descs: ["","You'll occasionally experience random, uncontrollable orgasms at unpredictable times of the day, coming with little or no warning. "]},
 {attribname: "triggered orgasms", descs: ["","You now have a magic trigger word <b>'Ministrations'</b>. Whenever you read or hear it, you'll immediately find yourself experiencing a powerful, uncontrollable orgasm."]},
@@ -155,11 +155,10 @@ var configChangeImgs = [ //used to show icons for attribute at this level
 {attribname: "polycule", imgsM:["Polycule1.jpg"], imgsF:["Polycule4.jpg"]},
 {attribname: "fluid addiction", imgs:["fluidaddiction.jpg"]},
 {attribname: "lactation", imgs:["lactation.jpg"]},
-{attribname: "headpats", imgsM:["HeadpatsM.jpg"], imgsF:["HeatpatsF"]},
+{attribname: "headpats", imgsM:["HeadpatsM.jpg"], imgsF:["HeatpatsF.jpg"]},
 {attribname: "hair removal", imgs:["hairremoval.jpg"]},
 {attribname: "sleepy", imgsM:["sleepyM.jpg"], imgsF:["sleepyF.jpg"]},
 {attribname: "noisy", imgs:["noisy.jpg"]},
-{attribname: "denial", imgs:["denial.jpg"]}
 ];
 
 
