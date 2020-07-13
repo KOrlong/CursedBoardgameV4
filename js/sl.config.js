@@ -159,6 +159,7 @@ var configChangeImgs = [ //used to show icons for attribute at this level
 {attribname: "hair removal", imgs:["hairremoval.jpg"]},
 {attribname: "sleepy", imgsM:["sleepyM.jpg"], imgsF:["sleepyF.jpg"]},
 {attribname: "noisy", imgs:["noisy.jpg"]},
+{attribname: "denial", imgs:["denial.jpg"]},
 ];
 
 
