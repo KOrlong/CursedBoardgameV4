@@ -1,0 +1,1008 @@
+@charset "utf-8";
+
+
+@font-face {
+    font-family: 'the_kings_of_the_houseregular';
+    src: url('../fonts/thekingsofthehouse-regular_0-webfont.eot');
+    src: url('../fonts/thekingsofthehouse-regular_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/thekingsofthehouse-regular_0-webfont.woff2') format('woff2'),
+         url('../fonts/thekingsofthehouse-regular_0-webfont.woff') format('woff'),
+         url('../fonts/thekingsofthehouse-regular_0-webfont.ttf') format('truetype'),
+         url('../fonts/thekingsofthehouse-regular_0-webfont.svg#the_kings_of_the_houseregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'custfont';
+    src: local(Tahoma);
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*{
+	outline:none;
+	padding:0px;
+}
+html, body {
+	height: 100%;
+	text-size-adjust: 100%; 
+    -ms-text-size-adjust: 100%; 
+    -moz-text-size-adjust: 100%; 
+    -webkit-text-size-adjust: 100%;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background: #000000;
+}
+#wrapper{
+	width:100%;
+	height:100%;
+	display: flex;
+	margin: 0 auto;
+}
+.clear{ clear:both;}
+
+#container{
+	width:800px;
+	height:600px;
+	max-width: 100%;
+	margin: auto;
+	overflow: hidden;
+}
+
+/******* screen 1**********/
+#screen1{
+	width:800px;
+	height:600px;
+	background:url(../img/screen1.jpg) no-repeat;
+	position: relative;
+}
+/******/
+@keyframes curseanim {
+  10%, 90% {	
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(1px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(2px, 0, 0);
+  }
+}
+@keyframes curseanim2 {
+  5%, 95% {	
+	opacity:0;
+  }
+  
+  30%, 70% {
+    opacity:1;
+  }
+
+}
+
+
+
+header {
+    width: 800px;
+    min-height: 300px;
+    position: relative;
+    max-width: 100%;
+}
+
+footer {
+    width: 800px;
+    max-width: 100%;
+    position: relative;
+}
+
+
+
+.screen1_footer {
+float: middle;
+position: relative;
+ text-align: center;
+ vertical-align: middle;
+ margin:auto;
+ top: 300px;
+}
+.startBtn {
+	width: 300px;
+	height: 110px;
+	background:url(../img/play_bg.png) no-repeat;	
+	cursor: default;
+	display: block;	
+    color: #fff;
+    text-align: center;
+	margin:auto;
+	padding-top: 20px;
+	font-family: 'the_kings_of_the_houseregular';
+	font-size: 45px;
+	color: #ffcc00;
+}
+.startBtn span{  z-index: 999;  position: relative;}
+
+
+
+/******* screen 2**********/
+
+#screen2{
+	width:800px;
+	height:600px;
+	background:url(../img/screen2.jpg) no-repeat;
+	position: relative;
+	overflow: hidden;
+}
+
+#instructions{
+	width:700px;
+	height: 520px;
+	background:url(../img/instr-bg.png) no-repeat;
+	margin:auto;
+	padding-top: 40px;
+}
+#instructions h2{
+  font-family: 'the_kings_of_the_houseregular';
+  font-size: 20px;
+  text-align:center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 280px;
+  margin: 0px auto;
+  padding: 10px;
+  color: #fff;
+}
+.inst_text ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.inst_text {
+font-family: 'custfont';
+    width: 600px;
+    margin: auto;
+    max-width: 100%;
+    padding-left: 25px;
+    color: #fff;
+	  z-index: 99;
+  position: relative;
+  font-size: 20px;
+}
+
+.inst_text li {
+    list-style-type: square;
+    font-size: 18px;
+    padding: 2px 0px;
+}
+button#play {
+  width: auto;
+  padding: 5px 15px;
+  float: right;
+  margin-right: 65px;
+   font-family: 'the_kings_of_the_houseregular';
+  font-size: 18px;
+  cursor: default;
+  position: absolute;
+  bottom: 20px;
+  right: 0px;
+  clear: both;
+}
+.screen2_footer{
+position: relative;
+ text-align: center;
+ vertical-align: middle;
+ margin:auto;
+  bottom: 80px;
+}
+
+/*** \screen 2****/
+
+
+/******* screen 3**********/
+#screen3{
+	width:800px;
+	height:600px;
+	background:url(../img/screen2.jpg) no-repeat;
+	position: relative;
+}
+.bio {   
+ font-family: 'custfont';
+    background: url(../img/biobg.png) no-repeat;  
+	display: block;	
+	color: #fff;
+	margin: 0 auto;
+	position: relative;
+	padding-top: 30px;	
+	width: 250px;
+	height: 375px;
+	float: left;
+	padding: 20px;
+	margin-top: 8px;
+}
+.bio2 {   
+ font-family: 'custfont';
+    background: url(../img/biobg.png) no-repeat;  
+	display: block;	
+	color: #fff;
+	margin: 0 auto;
+	position: relative;
+	padding-top: 30px;	
+	width: 220px;
+	height: 375px;
+	float: right;
+	padding: 20px;
+	margin-top: 8px;
+}
+.bio3 {   
+	display: block;	
+	margin: 0 auto;
+	position: relative;
+	width: 250px;
+	float: right;
+	padding: 20px;
+	margin-top: -120px;
+}
+.bios {  
+display: none;
+font-size: 20px;    	
+}
+.Level-Theme {
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 30px;
+}
+
+.Level-Theme h3 {
+    width: 400px;    
+    height: 115px;    
+    line-height: 100px;    
+    color: #fff;    
+	
+    font-weight: normal;
+    font-family: 'the_kings_of_the_houseregular';    
+    font-size: 33px;    
+    background: url(../img/selectLevel-bg.png);    
+	display: block;    
+    padding: 0px;    
+    position: relative;    
+    text-align: center;
+    margin: 0px;
+    z-index: 99;
+}
+.Level-Theme ul {
+    margin: 0px auto;
+    padding: 0px;
+    width: 400px;
+}
+
+.Level-Theme li {
+    list-style-type: none;
+    text-align: center;
+    font-family: 'the_kings_of_the_houseregular';
+    margin: 0px auto;
+    font-size: 25px;    
+    background: url(../img/Level-bg.png) no-repeat;    
+    line-height: 140px;        
+    display: block;    
+    color: #fff;    
+	cursor: default;    
+	
+    font-weight: normal;
+    width: 220px;
+    height: 100px;
+    position: absolute;
+    top: 90px;
+    left: 80px;
+}
+.Level-Theme li:nth-child(2) {
+    top: 155px;
+    z-index: 8;
+}
+
+.Level-Theme li:nth-child(3) {
+    top: 220px;
+    z-index: 7;
+}
+
+.Level-Theme li:nth-child(4) {
+    top: 285px;
+    z-index: 6;
+}
+
+.Level-Theme li:nth-child(5) {
+    top: 350px;
+	 z-index: 5;
+}
+.Level-Theme li:nth-child(6) {
+    top: 435px;
+}
+
+
+.Level-Theme li:nth-child(1) {
+    z-index: 9;
+}
+.Level-Theme li:hover {
+    text-decoration: none;    
+    color: #fff;
+}
+.Level-Theme li.active {	
+	color:#ffff00;
+}
+
+
+/******* screen 4**********/
+#screen4{
+	width:800px;
+	height:600px;
+	background:url(../img/screen4.jpg) no-repeat;
+	position: relative;
+}
+/******** \screen4 **********/
+
+/******* screen 5**********/
+
+
+div#dice {
+    width: 130px;
+    float: left;
+    position: relative;
+    height: 100%;
+}
+
+.surface {
+    width: 101px;
+    height: 117px;
+    background: url(../img/surface.png) no-repeat;
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+    text-align: center;
+}
+.surface span {
+    line-height: 190px;
+    color: yellow;
+    font-size: 20px;
+    font-family: 'the_kings_of_the_houseregular';
+    cursor: default;
+}
+.dice {
+    width: 70px;    
+    height: 70px;    
+    background: url(../img/dice.png) no-repeat;
+    position: absolute;    
+      bottom: 55px;
+  	left: 35px;
+	  cursor: default;
+}
+.items {
+    width: 70px;    
+    height: 100px;    
+    background: url(../img/items.png) no-repeat;
+    position: absolute;    
+      bottom: 155px;
+  	left: 35px;
+	  cursor: default;
+}
+
+.human {
+    width: 70px;    
+    height: 100px;    
+    background: url(../img/self.png) no-repeat;
+    position: absolute;    
+    bottom: 265px;
+  	left: 35px;
+	cursor: default;
+	animation: none;
+}
+.shop {
+    width: 70px;    
+    height: 100px;    
+    background: url(../img/shop.png) no-repeat;
+    position: absolute;    
+      bottom: 375px;
+  	left: 35px;
+	  cursor: default;
+}
+
+#innerself
+{
+	animation: none;
+}
+
+#table_grid{
+	width: 540px;
+	height: 540px;
+	margin: auto;
+	background:url(../img/ludo_bg.png) no-repeat;
+	position: relative;
+	float: left;
+	padding: 20px;
+	  margin-top: 8px;
+}
+.table {
+  width: 100%;
+  max-width: 100%;
+  border-spacing: 2;
+  /* border-collapse: collapse; */
+  position: relative;
+  display: table;
+}
+
+.table>tbody>tr>td {
+  width: 50px;
+  height: 50px;
+  vertical-align: top;
+  
+border: 1px solid #000;
+  line-height: 50px;
+  text-align: center;
+  font-size: 20px;
+  font-family: calibri;
+ 
+  font-weight: bold;
+}
+
+
+
+div#playerstatus {
+  width: 800px;
+  height: 600px;
+  margin: 0px;
+  position: absolute;
+  z-index: 999;
+  left: 0px;
+  background: url(../img/ques-holder.jpg) no-repeat;
+  bottom: -600px;
+  display: block;
+  -webkit-transition: all .5s .3s ease;
+  transition:  all .5s .3s ease;
+}
+.box {   
+ font-family: 'custfont';
+    background: url(../img/bigbox.png) no-repeat;  
+	display: block;	
+	color: #fff;
+	margin: 0 auto;
+	position: relative;	
+	width: 596px;
+	height: 440px;
+	float: middle;
+	padding: 24px;
+	margin-top: 30px;
+	font-size: 18px;
+	
+}
+.box p
+{
+	-webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+	margin-block-start: 0;
+    margin-block-end: 0;
+	float: middle;
+	width: 596px;
+	height: 440px;
+	overflow-y: auto;
+}
+
+div#inventory {
+  width: 800px;
+  height: 600px;
+  margin: 0px;
+  position: absolute;
+  z-index: 999;
+  left: 0px;
+  background: url(../img/ques-holder.jpg) no-repeat;
+  bottom: -600px;
+  display: block;
+  -webkit-transition: all .5s .3s ease;
+  transition:  all .5s .3s ease;
+}
+.box2 {   
+ font-family: 'custfont';
+    background: url(../img/inventorybg.png) no-repeat;  
+	display: block;	
+	color: #fff;
+	margin: 30px;
+	position: absolute;	
+	width: 250px;
+	height: 420px;	
+	padding: 30px;
+	padding-top: 20px;
+	margin-top: -28px;
+}
+.box2 ul
+{
+	list-style-position: inside;
+	cursor: default;
+	left:-5px; 
+	position:relative;
+}
+.box2 li.active {	
+	color:#00ff00;
+}
+
+
+
+div#questionViewer {
+  width: 800px;
+  height: 600px;
+  margin: 0px;
+  position: absolute;
+  z-index: 999;
+  left: 0px;
+  background: url(../img/ques-holder.jpg) no-repeat;
+  bottom: -600px;
+  display: block;
+  -webkit-transition: all .5s .3s ease;
+  transition:  all .5s .3s ease;
+}
+div#questionTitle {
+  width: 680px;
+  height: 360px;
+  margin: 0px auto;
+  background: url(../img/ques-box.png) no-repeat;
+  color: #fff;
+  position: relative;
+  font-family: 'custfont';
+  line-height: normal;
+  font-weight: normal;
+}
+
+#questionTitle p {
+    padding: 3px 8px 3px 60px;
+    padding-top: 26px;
+    font-size: 20px;
+    text-align: left;
+    line-height: normal;
+    position: relative;
+	 padding: 40px;
+}
+div#userAnswer {
+    width: 790px;    
+    height: 145px;
+    margin-top: 5px;
+}
+#userAnswer ul {
+    margin: 0px auto;
+    padding: 0px;
+    list-style: none;
+    line-height: normal;
+    vertical-align: middle;
+    width: 730px;
+    /* float: left; 
+    min-height: 38px;*/
+	 font-family: 'custfont';
+    text-align: center;
+}
+
+
+#userAnswer li {
+  width: 310px;
+  height: 65px;
+  background: url(../img/options-bg.png) no-repeat center center;
+  padding: 6px 15px;
+  color: #fff;
+  font-size: 20px;
+  margin: 0px 12px;
+  text-align: center;
+  float: left;
+  line-height: normal;
+  vertical-align: middle;
+  cursor: default;
+  display: flex;
+  align-items: center; /* Vertical center alignment */
+  justify-content: center; /* Horizontal center alignment */
+}
+
+#userAnswer li.active {
+	background:url(../img/options-bg_active.png) no-repeat;
+	color:#8c3f17;
+}
+
+.submitAns{
+width: 104px;
+background: url(../img/submitBtn.png) no-repeat;
+height: 50px;
+vertical-align: middle;
+font-family: 'the_kings_of_the_houseregular';
+font-weight: normal;
+color: #fff;
+border:0px;
+float: right;
+margin-right: 26px;
+font-size: 24px;
+  cursor: default;
+}
+
+div#ludo {
+    width: 540px;
+    height: 540px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+	
+}
+
+div#snakesDiv {
+    position: relative;
+}
+#snakesDiv div {
+    position: absolute;
+}
+
+
+
+div#laddersDiv {
+    position: relative;
+}
+#laddersDiv div {
+    position: absolute;
+}
+
+
+
+div#player {
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    margin: 15px;
+    bottom: 0px;
+    left: 0px;
+}
+
+div#player:after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background:url(../img/player.png);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 20px;
+    margin-left: -10px;
+    margin-top: -10px;
+    box-shadow: 0px 0px 5px rgb(40, 40, 40);
+}
+
+
+.pic-list {
+list-style-type: none;
+margin-left:0px;
+padding:6px;
+padding-bottom: 8px;
+display: inline-block;
+}
+
+.pic-list img
+{
+float:left;
+display: inline;
+border:2px solid #000000;
+margin-right:3px;
+padding:2px;
+}
+
+.pic-list p {
+text-align: right; 
+display:inline;
+
+}
+
+/*** dice roll ***/
+
+@keyframes diceRoll {
+	from{background-position: 0px 0px;}
+	to	{background-position: 0px -2380px;}
+}
+@-webkit-keyframes diceRoll {
+	from{background-position: 0px 0px;}
+	to	{background-position: 0px -2380px;}
+}
+@-moz-keyframes diceRoll{
+	from{background-position: 0px 0px;}
+	to	{background-position: 0px -2380px;}
+}
+@-ms-keyframes diceRoll {
+	from{background-position: 0px 0px;}
+	to	{background-position: 0px -2380px;}
+}
+@-o-keyframes diceRoll{
+	from{background-position: 0px 0px;}
+	to	{background-position: 0px -2380px;}
+}
+.digit1{
+	width:70px;
+	height:70px;
+	-webkit-animation:diceRoll 1s steps(34) alternate;
+	-moz-animation:diceRoll 1s steps(34) alternate;
+	-ms-animation:diceRoll 1s steps(34) alternate;
+	-o-animation:diceRoll 1s steps(34) alternate;
+	animation:diceRoll 1s steps(34) alternate;
+	
+	background:url(../img/digit1.png) no-repeat;
+}
+
+.digit1static { background:url(../img/digit1.png) no-repeat; }
+.digit2{
+	width:70px;
+	height:70px;
+	-webkit-animation:diceRoll 1s steps(34) alternate;
+	-moz-animation:diceRoll 1s steps(34) alternate;
+	-ms-animation:diceRoll 1s steps(34) alternate;
+	-o-animation:diceRoll 1s steps(34) alternate;
+	animation:diceRoll 1s steps(34) alternate;
+	
+	background:url(../img/digit2.png) no-repeat;
+}
+.digit2static { background:url(../img/digit2.png) no-repeat; }
+
+.digit3{
+	width:70px;
+	height:70px;
+	-webkit-animation:diceRoll 1s steps(34) alternate;
+	-moz-animation:diceRoll 1s steps(34) alternate;
+	-ms-animation:diceRoll 1s steps(34) alternate;
+	-o-animation:diceRoll 1s steps(34) alternate;
+	animation:diceRoll 1s steps(34) alternate;
+	
+	background:url(../img/digit3.png) no-repeat;
+}
+.digit3static { background:url(../img/digit3.png) no-repeat; }
+
+.digit4{
+	width:70px;
+	height:70px;
+	-webkit-animation:diceRoll 1s steps(34) alternate;
+	-moz-animation:diceRoll 1s steps(34) alternate;
+	-ms-animation:diceRoll 1s steps(34) alternate;
+	-o-animation:diceRoll 1s steps(34) alternate;
+	animation:diceRoll 1s steps(34) alternate;
+	
+	background:url(../img/digit4.png) no-repeat;
+}
+.digit4static { background:url(../img/digit4.png) no-repeat; }
+
+.digit5{
+	width:70px;
+	height:70px;
+	-webkit-animation:diceRoll 1s steps(34) alternate;
+	-moz-animation:diceRoll 1s steps(34) alternate;
+	-ms-animation:diceRoll 1s steps(34) alternate;
+	-o-animation:diceRoll 1s steps(34) alternate;
+	animation:diceRoll 1s steps(34) alternate;
+	
+	background:url(../img/digit5.png) no-repeat;
+}
+.digit5static { background:url(../img/digit5.png) no-repeat; }
+
+.digit6{
+	width:70px;
+	height:70px;
+	-webkit-animation:diceRoll 1s steps(34) alternate;
+	-moz-animation:diceRoll 1s steps(34) alternate;
+	-ms-animation:diceRoll 1s steps(34) alternate;
+	-o-animation:diceRoll 1s steps(34) alternate;
+	animation:diceRoll 1s steps(34) alternate;
+	
+	background:url(../img/digit6.png) no-repeat;
+}
+.digit6static { background:url(../img/digit6.png) no-repeat; }
+
+
+
+
+#msgComplete {
+	width: 100%;
+	height: 100%;
+	min-height: 640px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display:none;
+	overflow: hidden;
+	background: url(../img/wellDone-bg.jpg) no-repeat;
+	font-family: 'custfont';
+	color: #fff;
+	margin: auto;
+	
+}
+
+
+#msgComplete p
+{
+	text-align: center;
+	margin: 12px 0px;
+}
+
+
+.overlay{
+	width: 100%;
+	height: 100%;
+	min-height: 640px;
+	background: rgba(0, 0, 0, 0.67);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display:none;
+	overflow: hidden;
+	z-index: 9999;
+}
+.alertMsg{
+	width: 560px;
+	height:460px;
+	margin: 0 auto;
+	background:url(../img/notify.png) no-repeat;
+	
+	position: relative;
+	top: 40px;
+	z-index: 9999;
+	display: none;
+}
+.alertMsg p{
+  width: 90%;
+  height: 440px;
+  margin: 0 auto;
+  font-size: 19px;
+  color: #fff;
+  padding-top: 24px;
+  text-align: center;
+  font-family: 'custfont';
+  text-size-adjust: 100%; 
+  -ms-text-size-adjust: 100%; 
+  -moz-text-size-adjust: 100%; 
+  -webkit-text-size-adjust: 100%;
+}
+
+#toggleminimize
+{
+	background:url(../img/minmax.png) no-repeat;
+	position:absolute;
+	right:-60px;
+	width:120px;
+	height:60px;
+}
+
+#replay {
+  float: right;
+  width: 120px;
+  position: absolute;
+  bottom: 40px;
+  right: 3px;
+  text-align: center;
+  background: #F4F408;
+  padding: 7px 10px;
+  font-family: 'the_kings_of_the_houseregular';
+  font-size: 18px;
+  cursor: default;
+  color: #000;
+  display:none;
+  border: 2px #8f3f14 dotted;
+  background-size: 100%;
+}
+#finalinspect {
+  width: 120px;
+  margin:0 auto;
+  text-align: center;
+  background: #F4F408;
+  padding: 7px 10px;
+  font-family: 'the_kings_of_the_houseregular';
+  font-size: 18px;
+  cursor: default;
+  color: #000;
+  display:none;
+  border: 2px #8f3f14 dotted;
+  background-size: 100%;
+}
+
+#debug {
+display: none;
+  background-color: #40413C;
+  text-align: center;
+}
+
+/*select {
+  
+  -moz-box-sizing:border-box;
+-webkit-box-sizing:border-box;
+box-sizing:border-box;
+  
+    font:18px "arial";
+  padding:14px 0px 13px 12px ;
+
+    margin: 5px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+    -webkit-box-shadow: 2px 2px 7px #000;
+    -moz-box-shadow:2px 2px 7px #000;
+    box-shadow: 2px 2px 7px #000;
+    background: #f8f8f8;
+    color:#888;
+    border:none;
+    outline:none;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor: default;
+	width: 200px;
+	margin: 20px auto;
+}*/
+
+/* Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding. */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    select {padding-right:20px
+    -moz-box-sizing:border-box;
+-webkit-box-sizing:border-box;
+box-sizing:border-box;
+  }
+  
+}
+
+label {position:relative}
+label:after {
+    content:'►';
+    color:#aaa;
+  background-color:#fff;
+  border-radius:0 3px 3px 0px;
+    right:6px; top:0px;
+    padding:14px 8px 15px 9px;
+  margin:-16px 0px 0px 0px;
+    border-left:1px solid #ddd;
+    position:absolute;
+    pointer-events:none;
+}
+label:before {
+  
+    content:'';
+    right:6px; top:0px;
+    width:20px; height:20px;
+    background:#f8f8f8;
+    position:absolute;
+    pointer-events:none;
+    display:block;
+}
+
+span#loganswer {
+    color: #FFF;
+    -moz-box-sizing: border-box;    -webkit-box-sizing: border-box;    box-sizing: border-box;    font: 18px "arial";    padding: 14px 12px 13px 12px;    margin: 5px;    -webkit-border-radius: 3px;    -moz-border-radius: 3px;    border-radius: 3px;    -webkit-box-shadow: 2px 2px 7px #000;    -moz-box-shadow: 2px 2px 7px #000;    box-shadow: 2px 2px 7px #000;    
+    background: #515151;        border: none;    outline: none;    display: inline-block;    -webkit-appearance: none;    -moz-appearance: none;    appearance: none;    cursor: default;    min-width: 200px;    margin: 20px auto;
+}
+
+
+body.spinnerprogress .progress {
+	background: #dbeef4;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+	text-align: center;
+}
+
+body.spinnerprogress.done .progress {
+	display: none;
+}
+
+#progress-wrapper {
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	margin: auto;
+}
+
+.mauto {
+	margin:  auto;
+}
