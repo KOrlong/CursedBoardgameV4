@@ -130,7 +130,7 @@ var configChangeImgs = [ //used to show icons for attribute at this level
 {attribname: "increased fluids", imgsM:["increasedfluidsM.jpg"], imgsF:["increasedfluidsF.jpg"]},
 {attribname: "always ready", imgsM:["alwaysreadyM.jpg"], imgsF:["alwaysreadyF.jpg"]},
 {attribname: "enhanced orgasms", imgsM:["enhancedM1.jpg","enhancedM1.jpg","enhancedM2.jpg"], imgsF:["enhancedF1.jpg","enhancedF1.jpg","enhancedF2.jpg"]},
-{attribname: "submissiveness", imgs:["submissive.jpg","submissive2.jpg","submissive3.jpg"]},
+{attribname: "submissiveness", imgs:["submissive.jpg","submissive3.jpg","submissive2.jpg"]},
 {attribname: "optimized body",imgsM:["optimizedM.jpg"], imgsF:["optimizedF.jpg"]},
 {attribname: "multiple orgasms", imgs:["multipleorgasms.jpg"]},
 {attribname: "random orgasms", imgs:["randomorgasms.jpg"]},
