@@ -90,7 +90,7 @@ var configAttribDescs = [
 {attribname: "hair removal", descs: ["","You're completely hairless from the neck down, permanently. You won't ever have to worry about body hair."]},
 {attribname: "sleepy", descs: ["","You need more sleep than normal. You may find yourself dozing off without noticing."]},
 {attribname: "noisy", descs: ["","You're can't help but whimper and moan when pleasured. It'll be impossible for you to stay quiet when you orgasm."]},
-{attribname: "denial", descs: ["","You find it much harder to get off on your own, whether with toys or your own hands. It'll feel good, but you won't quite get there. You'll need to find someone else to help you out.","You can now only cum when directly ordered to by someone else, right as you reach your peak","Whenever you're about to orgasm there's a 30% chance you'll instead be unable to cum for the next 2 hours. You'll feel good but you won't be able to get over the edge, which will leave you horny and frustrated."]},
+{attribname: "denial", descs: ["","You find it much harder to get off on your own, whether with toys or your own hands. It'll feel good, but you won't quite get there. You'll need to find someone else to help you out.","You can now only cum when directly ordered to by someone else, right as you reach your peak","You can only cum when ordered to right as you reach your peak by someone you brought to orgasm in the last half hour. You can also be ordered to have a ruined orgasm, or to edge yourself supernaturally intensely until a counterorder is given."]},
 {attribname: "palette swap", descs: ["","","",""]},
 {attribname: "name change", descs: ["",""]},
 ];
