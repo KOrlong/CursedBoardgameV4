@@ -105,7 +105,7 @@ var configChangeDescs = [ //used to describe detailed changing to this level
 {attribname: "random orgasms", descs:["","Sometimes, you might be hanging around, and suddenly you'll feel pleasantly flushed, as your breath quickens. When that happens, you'd better excuse yourself quickly."]},
 {attribname: "triggered orgasms", descs:["","You hear a whispered word, and your body tenses up as a warmth builds. You try to resist, but you're soon quivering uncontrollably as the orgasm hits."]},
 {attribname: "triggered arousal", descs:["","You hear a whispered word, and suddenly you're flushed and horny, an intense arousal rapidly warming your loins."]},
-{attribname: "easily aroused", descsM:["","As the change washes over you, you feel your cock stirring and slowly getting stiff and erect."],descsF:["","As the change washes over you, you feel your nipples become a little hard as your pussy begins to wet itself."]},
+{attribname: "easily aroused", descsM:["","As the change washes over you, you feel your cock stirring and slowly getting stiff and erect."],descsF:["","As the change washes over you, you feel your nipples become a little hard as your pussy dampens."]},
 ];
 
 var configChangeImgs = [ //used to show icons for attribute at this level
