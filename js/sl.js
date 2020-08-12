@@ -86,7 +86,7 @@ playertoken.lastrolled = 0;
 playertoken.lastselecteditem = 0;
 
 var minheight = 140;
-var minage = 8;
+var minage = 13;
 
 var showtfeffect = false;
 var tfcounter = 0;
