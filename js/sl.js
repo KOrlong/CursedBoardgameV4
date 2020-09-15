@@ -826,7 +826,7 @@ function ApplyEffect(seldat)
 			case "Age Regression": PrepareTF();attribute="age"; 
 			playertoken.stats["age"] -= 2;
 			playertoken.stats["age"] = playertoken.stats["age"]<minage?minage:playertoken.stats["age"];
-			if(playertoken.stats["age"]<20)
+			if(playertoken.stats["age"]<16)
 			{
 				playertoken.stats["height"] -= 4;
 				playertoken.stats["height"] = playertoken.stats["height"]<minheight?minheight:playertoken.stats["height"];
@@ -840,9 +840,7 @@ function ApplyEffect(seldat)
 			case "Headpats": PrepareTF();attribute="headpats"; adjust_attrib(attribute,1); break;
 			case "Hair Removal": PrepareTF();attribute="hair removal"; adjust_attrib(attribute,1); break;
 			case "Sleepy": PrepareTF();attribute="sleepy"; adjust_attrib(attribute,1); break;
-			case "Ditzy": 
-			PrepareTF();
-			attribute="intelligence"; adjust_attrib(attribute,-10); break;
+			case "Ditzy": PrepareTF();attribute="intelligence"; adjust_attrib(attribute,-10); break;
 			case "Noisy": PrepareTF();attribute="noisy"; adjust_attrib(attribute,1); break;
 			case "Orgasm Denial": PrepareTF();attribute="denial"; adjust_attrib(attribute,1); break;
 			case "Clumsy": PrepareTF();attribute="dexterity"; adjust_attrib(attribute,-10); break;
@@ -852,7 +850,7 @@ function ApplyEffect(seldat)
 			case "Palette Swap": 
 			PrepareTF();
 			attribute=""; adjust_attrib("palette swap",1);
-			var hrc = ["Auburn","Black","Blonde","Blue","Brown","Brunette","Chesnut","Gray","Green","Pink","Platinum Blonde","Red","White"];
+			var hrc = ["Auburn","Black","Blonde","Blue","Brown","Brunette","Chesnut","Gray","Green","Pink","Platinum blonde","Red","White"];
 			var eyc = ["Blue","Green","Dark brown","Brown","Hazel","Amber","Gray"];
 			playertoken.stats["hair color"] = hrc[Math.floor(Math.random() * hrc.length)];
 			playertoken.stats["eye color"] = eyc[Math.floor(Math.random() * eyc.length)];
