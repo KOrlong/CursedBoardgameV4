@@ -861,7 +861,7 @@ function ApplyEffect(seldat)
 			attribute=""; adjust_attrib("name change",1);
 			var femname = ["Cindy","Jessica","Emma","Sarah","Samantha","Amanda","Sophie","Danielle","Sarah","Emily","Chloe","Mia","Victoria","Zoe"];
 			playertoken.stats["name"] = femname[Math.floor(Math.random() * femname.length)];
-			extrastr += "<br/><br/>Your name is now "+playertoken.stats["name"]+ " - you just know this instinctively. It feels strange to think of yourself by any other name. Paperwork and minds have been retroactively adjusted to match";
+			extrastr += "<br/><br/>Your name is now "+playertoken.stats["name"]+ " - your old name has been forgotten, history rewritten so memories and documents show you have somehow always had your changes. Only you will remember your real past, so try not to sound like a madwoman if you accidentally rely on the wrong set of memories!";
 			break;
 			case "Choose Silver":
 			attribute="";
