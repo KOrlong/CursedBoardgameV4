@@ -702,7 +702,7 @@ function ApplyEffect(seldat)
 					var giveqty = 1;
 					if(randitem.name=="Cash")	
 					{
-						giveqty = (Math.floor(1 + Math.random() * 8))*100;
+						giveqty = (Math.floor(1 + Math.random() * 28))*100;
 						money += giveqty;
 					}		
 					giveitem(randitem.name,giveqty);						
