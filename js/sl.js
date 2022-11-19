@@ -767,6 +767,7 @@ function ApplyEffect(seldat)
 				}
 				if(playertoken.stats["ass size"]<2){adjust_attrib("ass size",1); }
 				if(playertoken.stats["hair length"]<2){adjust_attrib("hair length",1); }
+				if(playertoken.stats["looks"]<2){adjust_attrib("looks",2); }
 				playertoken.stats["height"] -= 6;
 				playertoken.stats["height"] = playertoken.stats["height"]<minheight?minheight:playertoken.stats["height"];
 				attribute="physique"; 
@@ -784,7 +785,8 @@ function ApplyEffect(seldat)
 				adjust_attrib("breast size",1);
 			}
 			adjust_attrib("ass size",1);	
-			adjust_attrib("hair length",1);		
+			adjust_attrib("hair length",1);	
+			if(playertoken.stats["looks"]<3){adjust_attrib("looks",1); }
 			attribute="physique"; adjust_attrib(attribute,1); 
 			break;
 			case "Shrinking": 
