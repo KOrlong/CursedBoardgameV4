@@ -341,12 +341,8 @@ function filterunwantedtf(arr)
 	{
 		if(arr[i].requiresattribcustom)
 		{
-			//apply custom filtering for orientation.
-			if(arr[i].requiresattribcustom=="orientation" && playertoken.stats["orientation"]>0)
-			{				
-			}
 			//apply custom filtering for age.
-			else if(arr[i].requiresattribcustom=="age" && playertoken.stats["age"]<=minage)
+			if(arr[i].requiresattribcustom=="age" && playertoken.stats["age"]<=minage)
 			{				
 			}
 			//filter height
