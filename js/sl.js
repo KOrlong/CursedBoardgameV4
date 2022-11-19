@@ -793,7 +793,7 @@ function ApplyEffect(seldat)
 			break;
 			case "Ass Expansion": PrepareTF();attribute="ass size"; adjust_attrib(attribute,1); break;
 			case "Orientation Change": PrepareTF();attribute="orientation"; 
-			playertoken.stats["orientation"] = 1 + Math.floor(Math.random() * 2);
+			playertoken.stats["orientation"] = Math.floor(Math.random() * 3);
 			break;
 			case "Increased Libido": PrepareTF();attribute="increased libido"; adjust_attrib(attribute,1); break;
 			case "Increased Sensitivity": PrepareTF();attribute="increased sensitivity"; adjust_attrib(attribute,1); break;
