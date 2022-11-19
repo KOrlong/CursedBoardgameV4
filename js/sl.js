@@ -349,6 +349,10 @@ function filterunwantedtf(arr)
 			else if(arr[i].requiresattribcustom=="height" && playertoken.stats["height"]<=minheight)
 			{				
 			}
+			//filter for shrunken assets
+			else if(arr[i].requiresattribcustom=="breast size" && playertoken.stats["height"]<=3)
+			{				
+			}
 			//custom filtering for infertile and very fertile
 			else if((arr[i].requiresattribcustom=="infertile" || arr[i].requiresattribcustom=="very fertile") && (playertoken.stats["infertile"]>0||playertoken.stats["very fertile"]>0))
 			{				
