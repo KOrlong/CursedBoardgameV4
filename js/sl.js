@@ -22,7 +22,7 @@ playertoken.stats = {
 "last name":"",
 "age":18,
 "height":170,
-"gender":0,
+"sex":0,
 
 "strength":0,
 "stamina":0,
@@ -55,7 +55,7 @@ playertoken.stats = {
 "easily aroused":0,
 "hair trigger":0,
 "flexible":0,
-"cheerful":0,
+"shrunken assets":0,
 "tasty fluids":0,
 "pheromones":0,
 "no gag reflex":0,
@@ -71,7 +71,7 @@ playertoken.stats = {
 "polycule":0,
 "fluid addiction":0,
 "lactation":0,
-"headpats":0,
+"looks":0,
 "hair removal":0,
 "sleepy":0,
 "noisy":0,
@@ -86,7 +86,7 @@ playertoken.lastrolled = 0;
 playertoken.lastselecteditem = 0;
 
 var minheight = 140;
-var minage = 13;
+var minage = 16;
 
 var showtfeffect = false;
 var tfcounter = 0;
@@ -191,8 +191,8 @@ var selectedchar = function() {
 		playertoken.stats["orientation"] = parseInt(document.getElementById('iori').value);
 		
 		
-		var igd = parseInt(document.getElementById('igender').value);
-		playertoken.stats["gender"] = igd;
+		var igd = parseInt(document.getElementById('isex').value);
+		playertoken.stats["sex"] = igd;
 		if(igd!=0)
 		{
 			playertoken.stats["breast size"] = 1;
@@ -588,7 +588,7 @@ function get_attrib_limit(attribname)
 	}
 	else
 	{
-		if(playertoken.stats["gender"]==0)
+		if(playertoken.stats["sex"]==0)
 		{
 			limit = entry.descsM.length - 1;
 		}
@@ -755,11 +755,11 @@ function ApplyEffect(seldat)
 			attribute="hair length"; adjust_attrib(attribute,1);	break;
 			case "Enfeeblement": 
 			PrepareTF();
-			attribute="strength"; adjust_attrib(attribute,-10); break;
+			attribute="strength"; adjust_attrib(attribute,-2); break;
 			case "Breast Growth": 
 			PrepareTF();
 			attribute="breast size"; adjust_attrib(attribute,1); break;
-			case "Gender Change": 
+			case "Sex Change": 
 				PrepareTF();
 				if(playertoken.stats["breast size"]<2)
 				{
@@ -770,7 +770,7 @@ function ApplyEffect(seldat)
 				playertoken.stats["height"] -= 6;
 				playertoken.stats["height"] = playertoken.stats["height"]<minheight?minheight:playertoken.stats["height"];
 				attribute="physique"; 
-				adjust_attrib("gender",1); 
+				adjust_attrib("sex",1); 
 				adjust_attrib(attribute,1); 
 			break;
 			case "Extra Feminization": 
@@ -811,7 +811,7 @@ function ApplyEffect(seldat)
 			case "Easily Aroused": PrepareTF();attribute="easily aroused"; adjust_attrib(attribute,1); break;
 			case "Hair Trigger": PrepareTF();attribute="hair trigger"; adjust_attrib(attribute,1); break;
 			case "Flexible": PrepareTF();attribute="flexible"; adjust_attrib(attribute,1); break;
-			case "Cheerful": PrepareTF();attribute="cheerful"; adjust_attrib(attribute,1); break;
+			case "Shrunken Assets": PrepareTF();attribute="breast size"; adjust_attrib(attribute,-2); break;
 			case "Tasty Fluids": PrepareTF();attribute="tasty fluids"; adjust_attrib(attribute,1); break;
 			case "Pheromones": PrepareTF();attribute="pheromones"; adjust_attrib(attribute,1); break;
 			case "No Gag Reflex": PrepareTF();attribute="no gag reflex"; adjust_attrib(attribute,1); break;
@@ -833,20 +833,20 @@ function ApplyEffect(seldat)
 			}
 			break;
 			case "Heat": PrepareTF();attribute="heat"; adjust_attrib(attribute,1); break;
-			case "Wallflower": PrepareTF();attribute="charisma"; adjust_attrib(attribute,-10); break;
+			case "Wallflower": PrepareTF();attribute="charisma"; adjust_attrib(attribute,-2); break;
 			case "Polycule": PrepareTF();attribute="polycule"; adjust_attrib(attribute,1); break;
 			case "Fluid Addiction": PrepareTF();attribute="fluid addiction"; adjust_attrib(attribute,1); break;
 			case "Lactation": PrepareTF();attribute="lactation"; adjust_attrib(attribute,1); break;
-			case "Headpats": PrepareTF();attribute="headpats"; adjust_attrib(attribute,1); break;
+			case "Looks": PrepareTF();attribute="looks"; adjust_attrib(attribute,1); break;
 			case "Hair Removal": PrepareTF();attribute="hair removal"; adjust_attrib(attribute,1); break;
 			case "Sleepy": PrepareTF();attribute="sleepy"; adjust_attrib(attribute,1); break;
-			case "Ditzy": PrepareTF();attribute="intelligence"; adjust_attrib(attribute,-10); break;
+			case "Ditzy": PrepareTF();attribute="intelligence"; adjust_attrib(attribute,-2); break;
 			case "Noisy": PrepareTF();attribute="noisy"; adjust_attrib(attribute,1); break;
 			case "Orgasm Denial": PrepareTF();attribute="denial"; adjust_attrib(attribute,1); break;
-			case "Clumsy": PrepareTF();attribute="dexterity"; adjust_attrib(attribute,-10); break;
-			case "Enervation": PrepareTF();attribute="stamina"; adjust_attrib(attribute,-10); break;
-			case "Glasses": PrepareTF();attribute="eyesight"; adjust_attrib(attribute,-10); break;
-			case "Bad Luck": PrepareTF();attribute="luck"; adjust_attrib(attribute,-10); break;
+			case "Clumsy": PrepareTF();attribute="dexterity"; adjust_attrib(attribute,-2); break;
+			case "Enervation": PrepareTF();attribute="stamina"; adjust_attrib(attribute,-2); break;
+			case "Glasses": PrepareTF();attribute="eyesight"; adjust_attrib(attribute,-2); break;
+			case "Bad Luck": PrepareTF();attribute="luck"; adjust_attrib(attribute,-2); break;
 			case "Palette Swap": 
 			PrepareTF();
 			attribute=""; adjust_attrib("palette swap",1);
@@ -992,7 +992,7 @@ function showshop()
 
 function showplayerstatus()
 {
-	var facestr = "<img src='img/icons/face"+((playertoken.stats["gender"]==0)?"0":"1")+".png' width=120 height=120 style=\"margin:6px; float: right;\" />";
+	var facestr = "<img src='img/icons/face"+((playertoken.stats["sex"]==0)?"0":"1")+".png' width=120 height=120 style=\"margin:6px; float: right;\" />";
 	
 	document.getElementById('playerstatustext').innerHTML = facestr + stringify_player(true);
 	document.getElementById('playerstatus').style.bottom = '0px';
@@ -1142,7 +1142,7 @@ function selectsandbox(ele)
 	+"Last Name: <input type=text id=ilname value='Smith' maxlength=15 size=8><br/>"
 	+"Age: <input type=number id=iage value=26 min=18 max=80><br/>"
 	+"Height (cm): <input type=number id=iheight value=180 min="+minheight+" max=200><br/>"
-	+"Gender: <select id=igender><option value=0>M</option> <option value=1>F</option></select><br/>"
+	+"Sex: <select id=isex><option value=0>M</option> <option value=1>F</option></select><br/>"
 	+"Orientation: <select id=iori><option value=0>Prefers F</option> <option value=1>Prefers M</option><option value=2>Bisexual</option></select><br/>"
 	+"Hair Color: <input type=text id=ihairc value='Brown' maxlength=15 size=8><br/>"
 	+"Eye Color: <input type=text id=ieyec value='Hazel' maxlength=15 size=8><br/>"
@@ -1160,7 +1160,7 @@ function selectchar(ele)
 	playertoken.stats["name"] = tmp["name"];
 	playertoken.stats["last name"] = tmp["last name"];
 	playertoken.stats["age"] = tmp["age"];
-	playertoken.stats["gender"] = tmp["gender"];
+	playertoken.stats["sex"] = tmp["sex"];
 	playertoken.stats["height"] = tmp["height"];
 	playertoken.stats["strength"] = tmp["strength"];
 	playertoken.stats["stamina"] = tmp["stamina"];
@@ -1200,7 +1200,7 @@ function stringify_player(verbose)
 	var str = "";
 	str += "<span style='color:yellow'>Name:</span> " + playertoken.stats["name"] +" "+ playertoken.stats["last name"] +"<br/>";
 	str += "<span style='color:yellow'>Age:</span> " + playertoken.stats["age"] +"<br/>";
-	str += "<span style='color:yellow'>Sex:</span> " + stringify_attrib_desc("gender",false,false) +"<br/>";
+	str += "<span style='color:yellow'>Sex:</span> " + stringify_attrib_desc("sex",false,false) +"<br/>";
 	if(verbose)
 	{
 		str += "<span style='color:yellow'>Orientation:</span> " + stringify_attrib_desc("orientation",false,false) +"<br/>";
@@ -1237,7 +1237,7 @@ function stringify_player(verbose)
 		arr.push("easily aroused");
 		arr.push("hair trigger");
 		arr.push("flexible");
-		arr.push("cheerful");
+		arr.push("shrunken assets");
 		arr.push("tasty fluids");
 		arr.push("pheromones");
 		arr.push("no gag reflex");
@@ -1253,7 +1253,7 @@ function stringify_player(verbose)
 		arr.push("polycule");
 		arr.push("fluid addiction");
 		arr.push("lactation");
-		arr.push("headpats");
+		arr.push("looks");
 		arr.push("hair removal");
 		arr.push("sleepy");
 		arr.push("noisy");
@@ -1303,7 +1303,7 @@ function stringify_attrib_img(attribute)
 		{
 			if(IsInt(lv) && lv<found.imgsF.length && lv<found.imgsM.length)
 			{
-				if(playertoken.stats["gender"]==0)
+				if(playertoken.stats["sex"]==0)
 				{
 					return found.imgsM[lv];
 				}
@@ -1316,7 +1316,7 @@ function stringify_attrib_img(attribute)
 			{
 				if(found.imgsM.length>0 && found.imgsF.length>0)
 				{
-					if(playertoken.stats["gender"]==0)
+					if(playertoken.stats["sex"]==0)
 					{
 						return found.imgsM[found.imgsM.length-1];
 					}
@@ -1372,7 +1372,7 @@ function stringify_change_desc(attribute)
 			}
 			else
 			{
-				if(playertoken.stats["gender"]==0)
+				if(playertoken.stats["sex"]==0)
 				{
 					if(lv<found.descsM.length)
 					{
@@ -1409,7 +1409,7 @@ function stringify_attrib_desc(attribute, includeLabel ,describeAllChange)
 		}
 		else
 		{
-			if(playertoken.stats["gender"]==0)
+			if(playertoken.stats["sex"]==0)
 			{
 				ret = fx.descsM[playertoken.stats[attribute]];
 			}
