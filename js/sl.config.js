@@ -139,7 +139,7 @@ var configChangeImgs = [ //used to show icons for attribute at this level
 {attribname: "easily aroused", imgsM:["easilyarousedM.jpg"], imgsF:["easilyarousedF.jpg"]},
 {attribname: "hair trigger", imgsM:["hairtriggerM.jpg"], imgsF:["hairtriggerF.jpg"]},
 {attribname: "flexible", imgsM:["flexibleM.jpg"], imgsF:["flexibleF.jpg"]},
-{attribname: "shrunken assets", imgs:["shrunken assets.jpg"]},
+{attribname: "shrunken assets", imgs:["shrunkenassets.jpg"]},
 {attribname: "tasty fluids", imgs:["tastyfluids.jpg"]},
 {attribname: "pheromones", imgs:["pheromones.jpg"]},
 {attribname: "no gag reflex", imgs:["nogag.jpg"]},
