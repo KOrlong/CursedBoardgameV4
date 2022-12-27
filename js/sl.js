@@ -147,11 +147,11 @@ playertoken.gameover = function()
 	{
 		prog = "You somehow made it through entirely unscathed. Perhaps fate has other plans...";
 	}
-	else if(tfcounter<=3)
+	else if(tfcounter<=5)
 	{
 		prog = "You made it through nearly unchanged. Well, except for one or two things...";
 	}
-	else if(tfcounter<=9)
+	else if(tfcounter<=10)
 	{
 		prog = "Hmm. Guess you're gonna have a couple of changes to get used to...";		
 	}
